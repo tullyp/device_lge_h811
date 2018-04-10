@@ -26,5 +26,12 @@ TARGET_OTA_ASSERT_DEVICE := g4,p1,h811
 # Kernel
 TARGET_KERNEL_CONFIG := aoscp_h811_defconfig
 
+# Telephony
+PRODUCT_PACKAGES += \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
 # inherit from the proprietary version
 -include vendor/lge/h811/BoardConfigVendor.mk
