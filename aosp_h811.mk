@@ -39,7 +39,16 @@ PRODUCT_MANUFACTURER := LGE
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_DEVICE="g4" \
-    PRODUCT_NAME="g4__tmo_us" \
-    PRIVATE_BUILD_DESC="p1__tmo_us-user 8.0 NRD90U 1717709471d0f release-keys"
+    PRODUCT_NAME="p1_tmo_us" \
+    PRIVATE_BUILD_DESC="p1_tmo_us-user 6.0 MRA58K 1731216298e5b release-keys"
 
-BUILD_FINGERPRINT := "lge/p1__tmo_us/p1:8.1.0/OPM4.171019.016.A1/4720811:user/release-keys"
+BUILD_FINGERPRINT := "lge/p1_tmo_us/p1:6.0/MRA58K/1731216298e5b:user/release-keys"
+
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.radio.do_not_init_csvt=1 \
+    rild.libargs=-d /dev/smd0 \
+    ril.subscription.types=NV,RUIM \
+    ro.telephony.call_ring.multiple=0 \
+    ro.telephony.default_network=9 \
+    telephony.lteOnCdmaDevice=0 \
+    telephony.lteOnGsmDevice=1
