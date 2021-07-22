@@ -27,4 +27,4 @@ TARGET_OTA_ASSERT_DEVICE := g4,p1,h811
 TARGET_KERNEL_CONFIG := aoscp_h811_defconfig
 
 # inherit from the proprietary version
--include vendor/lge/vs986_usu/BoardConfigVendor.mk
+-include vendor/lge/h811/BoardConfigVendor.mk
